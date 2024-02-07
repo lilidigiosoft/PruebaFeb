@@ -8,8 +8,8 @@ require_once("layouts/header.php");
 <tr>
   <td>ID</td>
   <td>NOMBRE</td>
-  <td>RFC</td>
-  <td>DOMICILIO</td>
+  <td>DATOS DE USUARIO</td>
+
 </tr>
 
 <tbody>
@@ -20,14 +20,13 @@ require_once("layouts/header.php");
              <tr>
                  <td><?php echo $v['id']?></td>
                  <td><?php echo $v['nombre']?></td>
-                 <td><?php echo $v['rfc']?></td>
-                 <td><?php echo $v['domicilio']?></td>
+               
                  
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">EDITAR</a> 
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">ELIMITAR</a> 
-                     
+
                      <td>
-                     <a href="/index.php?m=editar&id=<?php echo $v['id']?>"></a>
+                     <a href="/index.php?m=editar&id=<?php echo $v['id']?>">DATOS DE USUARIO</a>
                      </td> 
                  </td>
              </tr>
