@@ -19,7 +19,7 @@ class modeloController{
   //INGRESAR DATA
   static function nuevo(){
     $nombre = $_REQUEST['nombre'];
-    $rfc = $_REQUEST['RFC'];
+    $rfc = $_REQUEST['rfc'];
     $domicilio = $_REQUEST['domicilio'];
     $data = "".$nombre.",".$rfc.",".$domicilio;
     $producto = new Modelo();
