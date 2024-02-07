@@ -17,7 +17,7 @@ require_once(layouts/header.php);
              foreach($value as $v):?>
              <tr>
                  <td><?php echo $v['id']?></td>
-                 <td><?php echo $v['nombre']</td>
+                 <td><?php echo $v['nombre']?></td>
                  
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">EDITAR</a> 
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">ELIMITAR</a> 
