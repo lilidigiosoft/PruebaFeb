@@ -18,7 +18,7 @@ require_once(layouts/header.php);
              <tr>
                  <td><?php echo $v['id']?></td>
                  <td><?php echo $v['nombre']</td>
-                 <td>
+                 
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">EDITAR</a> 
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">ELIMITAR</a> 
                      <td>
