@@ -9,7 +9,7 @@ class Modelo{
     $this-> db = new PDO('mysql:host=localhost;dbname=mvc', "root", "");
   }
 
-  public function insertar($tabla, $data){  
+  public function insertar($tabla, $data){ 
     $consulta ="insert into ".$tabla." values(null,". $data .")";
     $resultado=$this->db->query($consulta);
     if ($resultado){
@@ -47,6 +47,7 @@ class Modelo{
         return false;
       }
     }
+ 
     
 
 

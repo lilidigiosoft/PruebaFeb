@@ -11,7 +11,7 @@ class modeloController{
   //Mostrar
   static function index(){
     $producto = new Modelo();
-    $dato     = $producto-> mostrar("productos", "1");//Extraer datos
+    $dato     = $producto-> mostrar("clientes", "1");//Extraer datos de mi tabla
     require_once("vista/index.php");
   }
 
@@ -22,6 +22,6 @@ class modeloController{
     $domicilio = $_REQUEST['domicilio'];
     $data = "".$nombre.",".$rfc.",".$domicilio;
     $producto = new Modelo();
-    $dato = $producto->insertar("productos",$data);
+    $dato = $producto->insertar("clientes",$data);
   }
 }
