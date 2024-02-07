@@ -8,7 +8,7 @@ class modeloController{
     $this-> model = new Modelo();//conexión a la base de datos
   }
 
-  //mostrar
+  //Mostrar
   static function index(){
     $producto = new Modelo();
     $dato     = $producto-> mostrar("productos", "1");//Extraer datos
