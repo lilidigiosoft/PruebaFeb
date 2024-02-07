@@ -1,5 +1,6 @@
 <?php
 class Modelo{
+
   private $Modelo;
   private $db;
   private $datos;
@@ -47,11 +48,5 @@ class Modelo{
         return false;
       }
     }
- 
     
-
-
-
-
-
 }
