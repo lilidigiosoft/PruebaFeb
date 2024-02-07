@@ -25,17 +25,18 @@ require_once("layouts/header.php");
                  
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">EDITAR</a> 
                      <a class ="btn" href="/index.php?m=editar&id=<?php echo $v['id']?>">ELIMITAR</a> 
+                     
                      <td>
-                     <a href="/index.php?m=editar&id=<?php echo $v['id']?>">ACCIÓN</a>
+                     <a href="/index.php?m=editar&id=<?php echo $v['id']?>"></a>
                      </td> 
                  </td>
              </tr>
-             <?php endforeach ?>
-     <?php else: ?>
+             <?php endforeach; ?>
+      <?php else: ?>
          <tr>
-         <td colspan="3">NO HAY REGISTROS</td>
+            <td colspan="4">NO HAY REGISTROS</td>
          </tr>
-     <?php endif; ?>
+      <?php endif; ?>
      
 </tbody>
 
