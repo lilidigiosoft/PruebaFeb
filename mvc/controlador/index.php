@@ -15,11 +15,11 @@ class modeloController{
     require_once("vista/index.php");
   }
 
-  //NUEVO
+  //INGRESAR DATA
   static function nuevo(){
     $nombre = $_REQUEST['nombre'];
-    $nombre = $_REQUEST['RFC'];
-    $nombre = $_REQUEST['domicilio'];
+    $rfc = $_REQUEST['RFC'];
+    $domicilio = $_REQUEST['domicilio'];
     $data = "".$nombre.",".$rfc.",".$domicilio;
     $producto = new Modelo();
     $dato = $producto->insertar("productos",$data);
