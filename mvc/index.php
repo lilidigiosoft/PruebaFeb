@@ -1,5 +1,5 @@
 <?php
-require_once("config.php");
+require_once("config.php");//ROOT
 require_once("controlador/index.php");
 
 if(isset($_GET['m']))://BUSCA LA VARIABLE

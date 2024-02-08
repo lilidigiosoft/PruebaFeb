@@ -1,6 +1,7 @@
 <?php
 require_one("modelo/index.php");
 
+
 class modeloController{
   private $model;
 
