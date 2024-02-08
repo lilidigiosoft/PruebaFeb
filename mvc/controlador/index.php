@@ -24,5 +24,6 @@ class modeloController{
     $data = "".$nombre.",".$rfc.",".$domicilio;
     $producto = new Modelo();
     $dato = $producto->insertar("clientes",$data);
+    header("location:".urlsite);
   }
 }
