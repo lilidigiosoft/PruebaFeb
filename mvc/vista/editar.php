@@ -11,8 +11,8 @@ require_once("layouts/header.php")
     <input type="text" value="<?php echo  $v['nombre'] ?>" name="nombre"> <br>
     <input type="text" value="<?php echo  $v['precio'] ?>" name="precio"> <br>
     <input type="text" value="<?php echo  $v['domicilio'] ?>" name="domicilio"> <br>
-    <input type="submit" class="btn" name="m" value="GUARDAR">
-    <input type="hidden" name="m" value="guardar">
+    <input type="submit" class="btn" name="m" value="ACTUALIZAR">
+    <input type="hidden" name="m" value="actualizar">
     <?php
     endforeach;
     ?>
