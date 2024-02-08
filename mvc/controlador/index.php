@@ -22,8 +22,8 @@ class modeloController{
     $rfc = $_REQUEST['rfc'];
     $domicilio = $_REQUEST['domicilio'];
     $data = "nombre=".$nombre.",".$rfc.",".$domicilio;
-    $producto = new Modelo();
-    $dato = $producto->insertar("clientes",$data);
+    $cliente = new Modelo();
+    $dato = $cliente->insertar("clientes",$data);
     header("location:".urlsite);
   }
 }
