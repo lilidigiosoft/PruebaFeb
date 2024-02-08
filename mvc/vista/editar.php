@@ -8,11 +8,14 @@ require_once("layouts/header.php")
   <?php
   foreach($dato as $key => $value)
      foreach($value as $v):?>
-   <input type="text" placeholder="INGRESE NOMBRE" name="nombre"> <br>
-   <input type="text" placeholder="INGRESE RFC" name="rfc"> <br>
-   <input type="text" placeholder="INGRESE DOMICILIO" name="domicilio"> <br>
-   <input type="submit" class="btn" name="m" value="GUARDAR">
-   <input type="hidden" name="m" value="guardar">
+    <input type="text" value="<?php echo  $v['nombre'] ?>" name="nombre"> <br>
+    <input type="text" value="<?php echo  $v['precio'] ?>" name="precio"> <br>
+    <input type="text" value="<?php echo  $v['domicilio'] ?>" name="domicilio"> <br>
+    <input type="submit" class="btn" name="m" value="GUARDAR">
+    <input type="hidden" name="m" value="guardar">
+    <?php
+    endforeach;
+    ?>
 </form>
 <?php
 require_once("layouts/footer.php");
