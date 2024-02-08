@@ -4,7 +4,7 @@ require_one("modelo/index.php");
 class modeloController{
   private $model;
 
-  //
+  //NUEVO
   public function __construct(){
     $this-> model = new Modelo();
   }
@@ -21,7 +21,7 @@ class modeloController{
     $nombre = $_REQUEST['nombre'];
     $rfc = $_REQUEST['rfc'];
     $domicilio = $_REQUEST['domicilio'];
-    $data = "".$nombre.",".$rfc.",".$domicilio;
+    $data = "nombre=".$nombre.",".$rfc.",".$domicilio;
     $producto = new Modelo();
     $dato = $producto->insertar("clientes",$data);
     header("location:".urlsite);
